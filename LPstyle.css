@@ -1,0 +1,419 @@
+@import url(‘https://fonts.googleapis.com/css?family=Noto+Sans+JP&subset=japanese’);
+body{
+  background-color: #fafafa;
+  font-family: ‘Noto Sans JP’, sans-serif;
+}
+/***********
+共通
+************/
+h2{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.row{
+  margin:0;
+}
+.container{
+  max-width: 1140px;
+  margin:0 auto;
+}
+
+@media (max-width:767px) {
+  .f-red{
+    font-size:30px;
+    color:#c1272d;
+  }
+}
+/* 幅が 768px 以上のとき */
+@media (min-width:768px) {
+  .f-red{
+    font-size:50px;
+    color:#c1272d;
+  }
+}
+
+/**********
+ top-image
+***********/
+.top-image{
+  position: relative;
+  background-color: #241512;
+  text-align: center;
+}
+  .top-image img {
+    max-width:100%;
+    max-height:100vh;
+  }
+  .top-image .form-btn{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%,0%);
+    -webkit-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
+    margin:0;
+    padding:0;
+    bottom: 15%;
+    width: 35%;
+  }
+  .form-btn{
+    margin: 0 auto;
+    width: 50%;
+  }
+    .form-btn a {
+      background-color: #c1272d;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+      color: #ffffff;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px auto;
+      padding: 5% 0;
+    }
+    .form-btn a:hover {
+        box-shadow: none;
+        transform: translate3d(0, 2px, 0);
+    }
+/**********
+ recommended
+***********/
+.recommended{
+
+}
+  .recommended-content{
+    background-color: #1F80AA;
+    padding: 1rem 0;
+  }
+    .recommended-img{
+      width: 40%;
+    }
+    .recommended-left img ,.recommended-right img{
+      width: 60%;
+    }
+    .recommended-left h3 ,.recommended-right h3{
+      color: #CCEBF8;
+      width: 60%;
+    }
+    .recommended-left ,.recommended-right {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    .recommended-left{
+      border-top: solid  3px  #CCEBF8;
+      border-left: solid  3px  #CCEBF8;
+    }
+    .recommended-right{
+      border-right: solid  3px  #CCEBF8;
+      border-top: solid  3px  #CCEBF8;
+    }
+/**********
+ opinion
+***********/
+.opinion {
+
+}
+  .opinion h2{
+    color: #c1272d;
+  }
+  .opinion-content {
+    background-color: #CCEBF8;
+    padding: 1rem 0;
+  }
+      .opinion-head{
+        color: #c1272d;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+        .opinion-head-img img{
+            width: 50%;
+        }
+
+/**********
+ main-visual
+***********/
+.main-visual{
+  height: 100vh;
+  background-image: url("img/pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-visual p{
+  color: white;
+  font-size:2rem;
+}
+  .main-visual-top{
+
+  }
+    .main-visual-top p{
+      color: black;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      font-size:2rem;
+    }
+  .main-visual-u{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .main-visual-ul ,.main-visual-ux ,.main-visual-ur{
+      width: 30%;
+      text-align: center;
+    }
+      .main-visual-ul-img ,.main-visual-ur-img{
+
+      }
+        .main-visual-ul-img img ,.main-visual-ur-img img{
+          border-radius: 100%;
+          width:100%;
+        }
+
+/**********
+サイトを作る人
+***********/
+.coding-portfolio{
+  background-color: #1F80AA;
+  color: #CCEBF8;
+  padding: 1rem 0;
+}
+    .coding-portfolio-ttl{
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .coding-portfolio-ttl img{
+      width: 10%;
+    }
+    .coding-people{
+      padding: 2rem 0;
+      position: relative;
+    }
+      .coding-img {
+        text-align: center;
+      }
+      .coding-people ,.design-people {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0
+      }
+      .coding-people-img{
+        width:40%;
+        text-align: right;
+      }
+        .coding-people-img img{
+          width:80%;
+          border-radius: 100%;
+        }
+      .portfolio-people-txt{
+        width: 60%;
+      }
+      .portfolio-people-txt img{
+          width: 10%;
+      }
+      .portfolio-people-txt .fa-twitter-square{
+        color: #00acee;
+      }
+      @media (max-width:767px) {
+        .portfolio-people-txt{
+          font-size: 18px;
+        }
+      }
+      /* 幅が 768px 以上のとき */
+      @media (min-width:768px) {
+        .portfolio-people-txt{
+          font-size: 40px;
+        }
+      }
+
+        .coding-portfolio-content{
+          text-align: center;
+        }
+        .coding-portfolio-content a{
+          color: #CCEBF8;
+        }
+          .col-md-6 , .col-xs-12{
+            padding:1rem 0;
+          }
+            .portfolio-img{
+              overflow: hidden;
+              text-align: center;
+            }
+                .portfolio-img img{
+                    width: 80%;
+                  	transition-duration: 0.3s;
+                }
+                .portfolio-img img:hover{
+                    transform: scale(1.1);
+                  	transition-duration: 0.3s;
+                }
+
+            .portfolio-txt{
+
+            }
+
+/**********
+デザインする人
+***********/
+.design-portfolio{
+  background-color: #CCEBF8;
+  color: #1F80AA;
+  padding: 1rem 0;
+}
+    .design-portfolio-ttl{
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .design-portfolio-ttl img{
+      width: 10%;
+    }
+    .design-img {
+      text-align: center;
+    }
+    .design-img img{
+      width: 80%;
+      border-radius: 100%;
+    }
+    .design-ttl{
+      text-align: center;
+    }
+
+    .design-portfolio-ttl{
+      text-align: center;
+    }
+    .design-portfolio-content{
+      text-align: center;
+    }
+
+/**********
+ price
+***********/
+.price{
+  background-color: #1F80AA;
+  color: #CCEBF8;
+  padding: 1rem 0;
+}
+  /*price-ttl*/
+  .price-ttl{
+
+  }
+  /*price-content*/
+  .price-content{
+
+  }
+  .price-table{
+    text-align: center;
+  }
+      .attention p{
+        font-size: 16px;
+        text-align: center;
+      }
+
+
+.summary{
+  background-color: #CCEBF8;
+  color: #1F80AA;
+  padding: 1rem 0;
+}
+  .summary-ttl{
+
+  }
+  .summary-txt{
+    text-align: center;
+  }
+/**********
+ contact
+***********/
+.contact{
+  background-color: #1F80AA;
+  padding: 1rem 0;
+  color: #CCEBF8;
+}
+  .form {
+    text-align:center;
+  }
+  .share{
+    text-align: center;
+  }
+    .twitter{
+      text-align: center;
+    }
+      .twitter a{
+        margin: 0 auto;
+        width: 200px;
+        background-color: #1DA1F2;
+        border-radius: 5px;
+        box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+        color: #ffffff;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0;
+      }
+        .twitter a:hover {
+            box-shadow: none;
+            transform: translate3d(0, 2px, 0);
+        }
+        .twitter img {
+          width: auto;
+          height: 20px;
+        }
+
+footer{
+  background-color: #CCEBF8;
+}
+  footer p{
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    color: #1F80AA;
+  }
+
+
+@media (max-width:767px) {
+  h1{
+    font-size: 25px;
+  }
+  h2{
+    padding: 2rem 0;
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+/* 幅が 768px 以上のとき */
+@media (min-width:768px) {
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    padding: 2rem 0;
+    font-size: 80px;
+  }
+  h3{
+    font-size: 70px;
+  }
+  h4{
+    font-size: 40px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
